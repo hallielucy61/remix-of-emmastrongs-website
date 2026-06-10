@@ -81,20 +81,20 @@ export function HomeHero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.75, duration: 0.7 }}
-            className="mt-10 flex flex-wrap gap-4"
+            className="mt-10 flex flex-wrap gap-3 md:gap-4"
           >
             <Link
               to="/contact"
-              className="group bg-gradient-gold text-navy font-semibold px-8 py-4 rounded-full shadow-gold hover:shadow-luxury transition-all hover:-translate-y-0.5 inline-flex items-center gap-2"
+              className="group bg-gradient-gold text-navy font-semibold px-5 py-2.5 text-sm md:text-base md:px-8 md:py-4 rounded-full shadow-gold hover:shadow-luxury transition-all hover:-translate-y-0.5 inline-flex items-center gap-2"
             >
               Get Free Consultation
-              <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+              <ArrowRight size={16} className="md:w-[18px] md:h-[18px] group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
               to="/portfolio"
-              className="group border-2 border-white/30 backdrop-blur-sm bg-white/5 text-white font-semibold px-8 py-4 rounded-full hover:bg-white hover:text-navy transition-all inline-flex items-center gap-2"
+              className="group border-2 border-white/30 backdrop-blur-sm bg-white/5 text-white font-semibold px-5 py-2.5 text-sm md:text-base md:px-8 md:py-4 rounded-full hover:bg-white hover:text-navy transition-all inline-flex items-center gap-2"
             >
-              <Play size={16} className="fill-current" />
+              <Play size={14} className="md:w-4 md:h-4 fill-current" />
               View Projects
             </Link>
           </motion.div>
