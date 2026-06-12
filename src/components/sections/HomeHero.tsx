@@ -20,7 +20,7 @@ export function HomeHero() {
   }, []);
 
   return (
-    <section className="relative h-screen min-h-[700px] overflow-hidden">
+    <section className="relative min-h-[600px] md:min-h-[700px] h-[100svh] overflow-hidden">
       <AnimatePresence mode="sync">
         <motion.img
           key={i}
