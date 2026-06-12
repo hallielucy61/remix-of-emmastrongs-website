@@ -80,12 +80,12 @@ export function HomeHero() {
         </div>
       </div>
 
-      {/* Left-side CTA buttons */}
+      {/* Right-side CTA buttons */}
       <motion.div
-        initial={{ opacity: 0, x: -30 }}
+        initial={{ opacity: 0, x: 30 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.75, duration: 0.7 }}
-        className="hidden lg:flex absolute left-6 xl:left-10 top-1/2 -translate-y-1/2 flex-col gap-4 z-20"
+        className="hidden lg:flex absolute right-6 xl:right-10 top-1/2 -translate-y-1/2 flex-col gap-4 z-20"
       >
         <Link
           to="/contact"
