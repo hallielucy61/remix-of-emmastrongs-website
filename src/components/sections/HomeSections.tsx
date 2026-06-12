@@ -107,7 +107,7 @@ export function ServicesGrid({ heading = true }: { heading?: boolean }) {
               className="group relative bg-card border border-border rounded-2xl p-8 hover:border-gold hover:shadow-luxury transition-all duration-500 hover:-translate-y-2"
             >
               <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-gold opacity-0 group-hover:opacity-10 blur-3xl transition-opacity" />
-              <div className="h-14 w-14 rounded-xl bg-navy-deep grid place-items-center text-gold group-hover:bg-gradient-gold group-hover:text-navy transition-all duration-500">
+              <div className="h-14 w-14 rounded-xl bg-navy-deep grid place-items-center text-gold group-hover:bg-gradient-gold group-hover:text-navy group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
                 <Icon size={26} />
               </div>
               <h3 className="mt-6 text-xl font-display font-bold text-navy">{s.title}</h3>
@@ -121,9 +121,9 @@ export function ServicesGrid({ heading = true }: { heading?: boolean }) {
               </ul>
               <Link
                 to="/services"
-                className="mt-6 inline-flex items-center gap-1 text-sm font-semibold text-navy hover:text-gold-deep transition-colors"
+                className="mt-6 inline-flex items-center gap-1 text-sm font-semibold text-navy hover:text-gold-deep hover:gap-2 transition-all duration-300"
               >
-                Learn More <ArrowRight size={14} />
+                Learn More <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
             </motion.article>
           );
