@@ -51,9 +51,9 @@ export function AboutTeaser() {
           </ul>
           <Link
             to="/about"
-            className="inline-flex items-center gap-2 text-navy font-semibold border-b-2 border-gold pb-1 hover:gap-3 transition-all"
+            className="group inline-flex items-center gap-2 text-navy font-semibold border-b-2 border-gold pb-1 hover:gap-3 hover:text-gold-deep transition-all duration-300"
           >
-            Learn more about us <ArrowRight size={18} />
+            Learn more about us <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
           </Link>
         </div>
       </div>
