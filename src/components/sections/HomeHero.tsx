@@ -102,13 +102,13 @@ export function HomeHero() {
       </div>
 
       {/* Slide indicators */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+      <div className="absolute bottom-6 md:bottom-10 left-1/2 -translate-x-1/2 flex gap-2 z-10">
         {slides.map((_, idx) => (
           <button
             key={idx}
             onClick={() => setI(idx)}
-            className={`h-1 rounded-full transition-all ${
-              idx === i ? "bg-gold w-12" : "bg-white/40 w-6"
+            className={`h-1 rounded-full transition-all duration-500 hover:scale-y-[2] ${
+              idx === i ? "bg-gold w-12" : "bg-white/40 w-6 hover:bg-white/70"
             }`}
             aria-label={`Slide ${idx + 1}`}
           />
