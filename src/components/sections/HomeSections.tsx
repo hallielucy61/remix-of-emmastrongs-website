@@ -153,9 +153,9 @@ export function WhyUsSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.06, duration: 0.5 }}
-                className="bg-card p-8 rounded-2xl border border-border hover:border-gold transition-all group"
+                className="bg-card p-8 rounded-2xl border border-border hover:border-gold hover:-translate-y-1 hover:shadow-luxury transition-all duration-300 group"
               >
-                <div className="h-12 w-12 rounded-full bg-gold/10 grid place-items-center text-gold-deep group-hover:bg-gradient-gold group-hover:text-navy transition-all">
+                <div className="h-12 w-12 rounded-full bg-gold/10 grid place-items-center text-gold-deep group-hover:bg-gradient-gold group-hover:text-navy group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
                   <Icon size={22} />
                 </div>
                 <h3 className="mt-5 text-lg font-display font-bold text-navy">{w.title}</h3>
