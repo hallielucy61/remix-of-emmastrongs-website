@@ -20,7 +20,7 @@ export function HomeHero() {
   }, []);
 
   return (
-    <section className="relative h-screen min-h-[700px] overflow-hidden">
+    <section className="relative min-h-[600px] md:min-h-[700px] h-[100svh] overflow-hidden">
       <AnimatePresence mode="sync">
         <motion.img
           key={i}
@@ -50,7 +50,7 @@ export function HomeHero() {
       />
 
       <div className="relative h-full container-px mx-auto max-w-7xl flex items-center">
-        <div className="max-w-3xl text-white pt-20">
+        <div className="max-w-3xl text-white pt-24 pb-28 md:pb-20">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -85,16 +85,16 @@ export function HomeHero() {
           >
             <Link
               to="/contact"
-              className="group bg-gradient-gold text-navy font-semibold px-5 py-2.5 text-sm md:text-base md:px-8 md:py-4 rounded-full shadow-gold hover:shadow-luxury transition-all hover:-translate-y-0.5 inline-flex items-center gap-2"
+              className="group bg-gradient-gold text-navy font-semibold px-5 py-2.5 text-sm md:text-base md:px-8 md:py-4 rounded-full shadow-gold hover:shadow-luxury transition-all duration-300 hover:-translate-y-0.5 hover:scale-[1.03] active:scale-95 inline-flex items-center gap-2"
             >
               Get Free Consultation
-              <ArrowRight size={16} className="md:w-[18px] md:h-[18px] group-hover:translate-x-1 transition-transform" />
+              <ArrowRight size={16} className="md:w-[18px] md:h-[18px] transition-transform duration-300 group-hover:translate-x-1.5" />
             </Link>
             <Link
               to="/portfolio"
-              className="group border-2 border-white/30 backdrop-blur-sm bg-white/5 text-white font-semibold px-5 py-2.5 text-sm md:text-base md:px-8 md:py-4 rounded-full hover:bg-white hover:text-navy transition-all inline-flex items-center gap-2"
+              className="group border-2 border-white/30 backdrop-blur-sm bg-white/5 text-white font-semibold px-5 py-2.5 text-sm md:text-base md:px-8 md:py-4 rounded-full hover:bg-white hover:text-navy transition-all duration-300 hover:-translate-y-0.5 hover:scale-[1.03] active:scale-95 inline-flex items-center gap-2"
             >
-              <Play size={14} className="md:w-4 md:h-4 fill-current" />
+              <Play size={14} className="md:w-4 md:h-4 fill-current transition-transform duration-300 group-hover:scale-125" />
               View Projects
             </Link>
           </motion.div>
@@ -102,13 +102,13 @@ export function HomeHero() {
       </div>
 
       {/* Slide indicators */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+      <div className="absolute bottom-6 md:bottom-10 left-1/2 -translate-x-1/2 flex gap-2 z-10">
         {slides.map((_, idx) => (
           <button
             key={idx}
             onClick={() => setI(idx)}
-            className={`h-1 rounded-full transition-all ${
-              idx === i ? "bg-gold w-12" : "bg-white/40 w-6"
+            className={`h-1 rounded-full transition-all duration-500 hover:scale-y-[2] ${
+              idx === i ? "bg-gold w-12" : "bg-white/40 w-6 hover:bg-white/70"
             }`}
             aria-label={`Slide ${idx + 1}`}
           />

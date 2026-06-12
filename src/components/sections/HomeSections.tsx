@@ -51,9 +51,9 @@ export function AboutTeaser() {
           </ul>
           <Link
             to="/about"
-            className="inline-flex items-center gap-2 text-navy font-semibold border-b-2 border-gold pb-1 hover:gap-3 transition-all"
+            className="group inline-flex items-center gap-2 text-navy font-semibold border-b-2 border-gold pb-1 hover:gap-3 hover:text-gold-deep transition-all duration-300"
           >
-            Learn more about us <ArrowRight size={18} />
+            Learn more about us <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
           </Link>
         </div>
       </div>
@@ -107,7 +107,7 @@ export function ServicesGrid({ heading = true }: { heading?: boolean }) {
               className="group relative bg-card border border-border rounded-2xl p-8 hover:border-gold hover:shadow-luxury transition-all duration-500 hover:-translate-y-2"
             >
               <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-gold opacity-0 group-hover:opacity-10 blur-3xl transition-opacity" />
-              <div className="h-14 w-14 rounded-xl bg-navy-deep grid place-items-center text-gold group-hover:bg-gradient-gold group-hover:text-navy transition-all duration-500">
+              <div className="h-14 w-14 rounded-xl bg-navy-deep grid place-items-center text-gold group-hover:bg-gradient-gold group-hover:text-navy group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
                 <Icon size={26} />
               </div>
               <h3 className="mt-6 text-xl font-display font-bold text-navy">{s.title}</h3>
@@ -121,9 +121,9 @@ export function ServicesGrid({ heading = true }: { heading?: boolean }) {
               </ul>
               <Link
                 to="/services"
-                className="mt-6 inline-flex items-center gap-1 text-sm font-semibold text-navy hover:text-gold-deep transition-colors"
+                className="mt-6 inline-flex items-center gap-1 text-sm font-semibold text-navy hover:text-gold-deep hover:gap-2 transition-all duration-300"
               >
-                Learn More <ArrowRight size={14} />
+                Learn More <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
             </motion.article>
           );
@@ -153,9 +153,9 @@ export function WhyUsSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.06, duration: 0.5 }}
-                className="bg-card p-8 rounded-2xl border border-border hover:border-gold transition-all group"
+                className="bg-card p-8 rounded-2xl border border-border hover:border-gold hover:-translate-y-1 hover:shadow-luxury transition-all duration-300 group"
               >
-                <div className="h-12 w-12 rounded-full bg-gold/10 grid place-items-center text-gold-deep group-hover:bg-gradient-gold group-hover:text-navy transition-all">
+                <div className="h-12 w-12 rounded-full bg-gold/10 grid place-items-center text-gold-deep group-hover:bg-gradient-gold group-hover:text-navy group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
                   <Icon size={22} />
                 </div>
                 <h3 className="mt-5 text-lg font-display font-bold text-navy">{w.title}</h3>
@@ -203,12 +203,9 @@ function TestimonialsAutoplay() {
                 {Array.from({ length: t.rating }).map((_, k) => <span key={k}>★</span>)}
               </div>
               <blockquote className="text-white/85 leading-relaxed italic">"{t.text}"</blockquote>
-              <figcaption className="mt-6 flex items-center gap-4 pt-6 border-t border-white/10">
-                <img src={t.image} alt={t.name} className="h-12 w-12 rounded-full object-cover" loading="lazy" />
-                <div>
-                  <p className="font-semibold text-white">{t.name}</p>
-                  <p className="text-xs text-white/60">{t.role}</p>
-                </div>
+              <figcaption className="mt-6 pt-6 border-t border-white/10">
+                <p className="font-semibold text-white">{t.name}</p>
+                <p className="text-xs text-white/60 mt-1">{t.role}</p>
               </figcaption>
             </div>
           </figure>
@@ -236,9 +233,9 @@ export function CTASection() {
           </p>
           <Link
             to="/contact"
-            className="mt-8 inline-flex items-center gap-2 bg-gradient-gold text-navy font-semibold px-8 py-4 rounded-full shadow-gold hover:-translate-y-0.5 transition-all"
+            className="group mt-8 inline-flex items-center gap-2 bg-gradient-gold text-navy font-semibold px-8 py-4 rounded-full shadow-gold hover:-translate-y-0.5 hover:scale-[1.03] active:scale-95 hover:shadow-luxury transition-all duration-300"
           >
-            Get a Free Quote <ArrowRight size={18} />
+            Get a Free Quote <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1.5" />
           </Link>
         </div>
       </div>

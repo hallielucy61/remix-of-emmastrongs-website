@@ -49,12 +49,9 @@ function Testimonials() {
                 ))}
               </div>
               <blockquote className="text-foreground/85 leading-relaxed text-lg italic">"{t.text}"</blockquote>
-              <figcaption className="mt-8 flex items-center gap-4 pt-6 border-t border-border">
-                <img src={t.image} alt={t.name} className="h-14 w-14 rounded-full object-cover" loading="lazy" />
-                <div>
-                  <p className="font-display font-bold text-navy text-lg">{t.name}</p>
-                  <p className="text-sm text-muted-foreground">{t.role}</p>
-                </div>
+              <figcaption className="mt-8 pt-6 border-t border-border">
+                <p className="font-display font-bold text-navy text-lg">{t.name}</p>
+                <p className="text-sm text-muted-foreground mt-1">{t.role}</p>
               </figcaption>
             </motion.figure>
           ))}
