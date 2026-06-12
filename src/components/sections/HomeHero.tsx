@@ -50,7 +50,7 @@ export function HomeHero() {
       />
 
       <div className="relative h-full container-px mx-auto max-w-7xl flex items-center">
-        <div className="max-w-3xl text-white pt-20">
+        <div className="max-w-3xl text-white pt-24 pb-28 md:pb-20">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
