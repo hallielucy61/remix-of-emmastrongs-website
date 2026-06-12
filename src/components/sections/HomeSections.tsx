@@ -203,12 +203,9 @@ function TestimonialsAutoplay() {
                 {Array.from({ length: t.rating }).map((_, k) => <span key={k}>★</span>)}
               </div>
               <blockquote className="text-white/85 leading-relaxed italic">"{t.text}"</blockquote>
-              <figcaption className="mt-6 flex items-center gap-4 pt-6 border-t border-white/10">
-                <img src={t.image} alt={t.name} className="h-12 w-12 rounded-full object-cover" loading="lazy" />
-                <div>
-                  <p className="font-semibold text-white">{t.name}</p>
-                  <p className="text-xs text-white/60">{t.role}</p>
-                </div>
+              <figcaption className="mt-6 pt-6 border-t border-white/10">
+                <p className="font-semibold text-white">{t.name}</p>
+                <p className="text-xs text-white/60 mt-1">{t.role}</p>
               </figcaption>
             </div>
           </figure>
