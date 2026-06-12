@@ -233,9 +233,9 @@ export function CTASection() {
           </p>
           <Link
             to="/contact"
-            className="mt-8 inline-flex items-center gap-2 bg-gradient-gold text-navy font-semibold px-8 py-4 rounded-full shadow-gold hover:-translate-y-0.5 transition-all"
+            className="group mt-8 inline-flex items-center gap-2 bg-gradient-gold text-navy font-semibold px-8 py-4 rounded-full shadow-gold hover:-translate-y-0.5 hover:scale-[1.03] active:scale-95 hover:shadow-luxury transition-all duration-300"
           >
-            Get a Free Quote <ArrowRight size={18} />
+            Get a Free Quote <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1.5" />
           </Link>
         </div>
       </div>
