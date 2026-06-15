@@ -63,7 +63,7 @@ export function HomeHero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.35, duration: 0.8 }}
-            className="text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-[1.05] text-balance"
+            className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-[1.1] text-balance"
           >
             Transforming Spaces Into{" "}
             <span className="text-gradient-gold italic">Stunning</span> Masterpieces
@@ -72,7 +72,7 @@ export function HomeHero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.55, duration: 0.7 }}
-            className="mt-8 text-lg md:text-xl text-white/80 max-w-2xl leading-relaxed"
+            className="mt-6 text-base md:text-lg text-white/80 max-w-2xl leading-relaxed"
           >
             Professional interior & exterior decoration services designed to bring elegance,
             beauty, and functionality to every space.
